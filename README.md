@@ -29,7 +29,7 @@ Crear una aplicacion que permita al cliente agregar, modificar, confirmar o elim
 ### Asignacion de Tareas
 
 | Integrantes             | HTML y CSS     | Validaciones     | LocalStorage     | Conectar API simulada y armar README     |   
-|-------------------------|----------------|--------------------------------------------------------------------------------|
+|-------------------------|----------------|------------------|------------------|------------------------------------------|
 | Gadiel Collazos         |       X        |                  |                  |                                          |
 | Christopher Sosa        |                |         X        |                  |                                          |
 | Edson Rojas             |                |                  |         X        |                     X                    |
