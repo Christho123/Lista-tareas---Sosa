@@ -63,7 +63,7 @@ function guardarTareas() {
   localStorage.setItem("tareas", JSON.stringify(tareas));
 }
 
-// Eliminar -- Edson Rojas
+// Eliminar -- Christhoper Sosa
 function eliminarTarea(id) {
   if (confirm("¿Estás seguro de eliminar esta tarea?")) {
     tareas = tareas.filter(t => t.id !== id);
@@ -72,7 +72,7 @@ function eliminarTarea(id) {
   }
 }
 
-// Editar -- Edson Rojas
+// Editar -- Christhoper Sosa
 function editarTarea(id) {
   const tarea = tareas.find(t => t.id === id);
   document.getElementById("nombre").value = tarea.nombre;
@@ -81,14 +81,14 @@ function editarTarea(id) {
   idEditar = id;
 }
 
-// Limpiar inputs -- Edson Rojas
+// Limpiar inputs -- Christhoper Sosa
 function limpiarFormulario() {
   document.getElementById("nombre").value = "";
   document.getElementById("descripcion").value = "";
   document.getElementById("fecha").value = "";
 }
 
-// Buscar -- Edson Rojas
+// Buscar -- Christhoper Sosa
 document.getElementById("buscar").addEventListener("input", (e) => {
   mostrarTareas(e.target.value);
 });
