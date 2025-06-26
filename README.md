@@ -7,14 +7,7 @@ El presente proyecto tiene como finalidad crear una app que permita al usuario g
 Crear una aplicacion web que permita gestionar tareas personales de manera local.
 
 # Sprint Goal
-Crear una aplicacion que permita al cliente agregar, modificar, confirmar o eliminar sus tareas personales a traves del navegador.
-
-# Sprint Backlog
-- Crear interfaz HTML
-- Implementar estilos con CSS
-- Agregar, modificar, buscar y eliminar tareas
-- Guardar en localStorage o JSON simulado
-- Documentar proyecto + readme
+Crear una aplicacion que permita al cliente agregar, modificar, confirmar o eliminar sus tareas personales a traves del navegador
 
 ## Roles Scrum
 
