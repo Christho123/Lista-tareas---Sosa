@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>To-do List Mejorada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Lista de Tareas</h1>
+
+    <div class="formulario">
+      <input type="text" id="nombre" placeholder="Nombre de la tarea">
+      <input type="text" id="descripcion" placeholder="Descripción">
+      <input type="date" id="fecha">
+      <button id="agregar-btn">Agregar / Modificar</button>
+    </div>
+
+    <input type="text" id="buscar" placeholder="🔍 Buscar por nombre..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Fecha de entrega</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-tareas"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
