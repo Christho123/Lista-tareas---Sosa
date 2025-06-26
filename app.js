@@ -1,4 +1,8 @@
+
+// Paso 1: Busca las tareas guardadas en el navegador
+// Paso 2: Si no hay, empieza con una lista vacía
 let tareas = JSON.parse(localStorage.getItem("tareas")) || [];
+// Paso 3: Prepara una variable para guardar el ID de la tarea que se va a editar - Edson Rojas
 let idEditar = null;
 
 // Mostrar tareas al cargar -- Christhoper Sosa
@@ -64,6 +68,7 @@ function guardarTareas() {
 }
 
 // Eliminar -- Edson Rojas
+// Funcion para eliminar tareas
 function eliminarTarea(id) {
   if (confirm("¿Estás seguro de eliminar esta tarea?")) {
     tareas = tareas.filter(t => t.id !== id);
@@ -73,6 +78,7 @@ function eliminarTarea(id) {
 }
 
 // Editar -- Edson Rojas
+// Funcion para editar tarea
 function editarTarea(id) {
   const tarea = tareas.find(t => t.id === id);
   document.getElementById("nombre").value = tarea.nombre;
@@ -82,6 +88,7 @@ function editarTarea(id) {
 }
 
 // Limpiar inputs -- Edson Rojas
+// Funcion para limpiar formulario 
 function limpiarFormulario() {
   document.getElementById("nombre").value = "";
   document.getElementById("descripcion").value = "";
@@ -89,6 +96,7 @@ function limpiarFormulario() {
 }
 
 // Buscar -- Edson Rojas
+
 document.getElementById("buscar").addEventListener("input", (e) => {
   mostrarTareas(e.target.value);
 });
