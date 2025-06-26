@@ -34,7 +34,7 @@ document.getElementById("agregar-btn").addEventListener("click", () => {
   limpiarFormulario();
 });
 
-// Mostrar tareas -- Christhoper Sosa
+// Mostrar tarea -- Christhoper Sosa
 function mostrarTareas(filtro = "") {
   const cuerpo = document.getElementById("tabla-tareas");
   cuerpo.innerHTML = "";
